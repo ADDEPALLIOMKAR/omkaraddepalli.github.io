@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Omkar Addepalli | Software Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --card: #111111;
+      --accent: #00f5ff;
+      --text: #e0e0e0;
+      --gray: #888888;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Hero */
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      background: linear-gradient(135deg, #0a0a0a 0%, #1a0033 100%);
+    }
+
+    .hero-content {
+      display: flex;
+      align-items: center;
+      gap: 80px;
+      flex-wrap: wrap;
+    }
+
+    .hero-text h1 {
+      font-size: 4.5rem;
+      margin-bottom: 10px;
+      background: linear-gradient(90deg, #00f5ff, #a020f0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-text p {
+      font-size: 1.4rem;
+      color: var(--gray);
+      margin-bottom: 20px;
+    }
+
+    .photo {
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      border: 6px solid var(--accent);
+      box-shadow: 0 0 60px rgba(0, 245, 255, 0.4);
+      object-fit: cover;
+    }
+
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(17, 17, 17, 0.8);
+      backdrop-filter: blur(12px);
+      padding: 12px 40px;
+      border-radius: 50px;
+      z-index: 1000;
+      border: 1px solid rgba(0, 245, 255, 0.2);
+    }
+
+    nav ul {
+      display: flex;
+      gap: 40px;
+      list-style: none;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+      text-shadow: 0 0 10px var(--accent);
+    }
+
+    /* Sections */
+    section {
+      padding: 120px 0;
+    }
+
+    h2 {
+      font-size: 3rem;
+      margin-bottom: 60px;
+      text-align: center;
+      background: linear-gradient(90deg, #00f5ff, #a020f0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 20px;
+      padding: 40px;
+      margin-bottom: 30px;
+      border: 1px solid rgba(0, 245, 255, 0.1);
+      transition: all 0.4s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      border-color: var(--accent);
+      box-shadow: 0 20px 40px rgba(0, 245, 255, 0.1);
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+      gap: 30px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 60px 0;
+      color: var(--gray);
+      border-top: 1px solid #222;
+    }
+
+    .accent-text {
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Omkar Addepalli</h1>
+        <p>Aspiring Software Developer</p>
+        <p style="font-size:1.1rem; max-width:500px;">
+          Passionate about building scalable web applications and modern cloud-native solutions.
+        </p>
+      </div>
+      <img src="https://i.imgur.com/your-photo.jpg" alt="Omkar Addepalli" class="photo">
+      <!-- Replace the URL above with your actual photo link -->
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <h2>Career Objective</h2>
+      <div class="card" style="text-align:center; font-size:1.2rem;">
+        Aspiring Software Developer with strong skills in web technologies, DevOps tools, and programming languages. 
+        Highly motivated to learn modern technologies and contribute effectively in dynamic software development environments.
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" style="background:#0f0f0f;">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="card">
+        <h3>Koneru Lakshmaiah University (KL University)</h3>
+        <p><strong>B.Tech in Computer Science and Engineering</strong> • 2023 – Present</p>
+        <p class="accent-text">CGPA: 9.7 (1st & 2nd Year)</p>
+      </div>
+      <div class="card">
+        <h3>Narayana Junior College</h3>
+        <p><strong>Board of Intermediate Education (MPC)</strong> • 2021 – 2023</p>
+        <p class="accent-text">Percentage: 97.5%</p>
+      </div>
+      <div class="card">
+        <h3>Bhashyam High School</h3>
+        <p><strong>Board of Secondary Education</strong> • 2021</p>
+        <p class="accent-text">Percentage: 100%</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="card">
+          <h3>Programming Languages</h3>
+          <p>C, Python, Java</p>
+        </div>
+        <div class="card">
+          <h3>Web Technologies</h3>
+          <p>HTML, CSS, Bootstrap, JavaScript (ES6), React.js</p>
+        </div>
+        <div class="card">
+          <h3>Databases</h3>
+          <p>MySQL, Oracle</p>
+        </div>
+        <div class="card">
+          <h3>DevOps Tools</h3>
+          <p>Git, GitHub, Docker, Kubernetes, AWS</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" style="background:#0f0f0f;">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+        <div class="card">
+          <h3>1. Online Banking System</h3>
+          <p><strong>Flask • MySQL • JavaScript</strong></p>
+          <br>
+          <p>Full-stack banking application with separate user and admin interfaces.</p>
+          <ul style="margin-top:15px; color:var(--gray);">
+            <li>Secure authentication for users & admins</li>
+            <li>Transaction history and real-time updates</li>
+            <li>Admin database management</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>2. E-commerce Web Application</h3>
+          <p><strong>Docker + Kubernetes + AWS</strong></p>
+          <br>
+          <p>Containerized e-commerce platform with product listings and cart system.</p>
+          <ul style="margin-top:15px; color:var(--gray);">
+            <li>Full Docker containerization</li>
+            <li>Kubernetes orchestration</li>
+            <li>Deployed on AWS</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2>Let's Connect</h2>
+      <div class="card" style="text-align:center;">
+        <p style="font-size:1.3rem; margin-bottom:20px;">
+          Feel free to reach out!
+        </p>
+        <p>
+          <a href="mailto:omkaraddepalli@gmail.com" style="color:var(--accent); text-decoration:none;">
+            omkaraddepalli@gmail.com
+          </a>
+        </p>
+        <p style="margin-top:10px;">
+          <a href="mailto:2300030012cseird@gmail.com" style="color:var(--accent); text-decoration:none;">
+            2300030012cseird@gmail.com
+          </a>
+        </p>
+        <br>
+        <p>
+          <a href="https://www.codechef.com/users/klu2300030012" target="_blank" style="color:var(--accent);">
+            CodeChef Profile →
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    <p>&copy; 2026 Omkar Addepalli • Built with passion</p>
+  </div>
+
+  <script>
+    // Smooth scrolling
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
